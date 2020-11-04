@@ -125,7 +125,7 @@ public class OPG {
             }
         }
         else {
-            System.out.println("E");
+            System.out.println("RE");
             return 0;
         }
         return 1;
@@ -137,6 +137,7 @@ public class OPG {
         char op;
         int mode;
         stack.push(chs[0]);//之后对入栈值进行优化
+        System.out.println(chs);
         if(chs[0]==')'){
             System.out.println("E");
             return 0;
