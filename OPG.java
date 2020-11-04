@@ -125,7 +125,7 @@ public class OPG {
             }
         }
         else {
-            System.out.println("RE");
+            System.out.println("E");
             return 0;
         }
         return 1;
@@ -177,7 +177,7 @@ public class OPG {
         while (stack.size()>1||stack.peek()!='N'){
             op=FindOP();
             if(op=='('){
-                System.out.println("RE");
+                System.out.println("E");
                 return 0;
             }
             mode=Raction();
