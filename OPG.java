@@ -137,7 +137,6 @@ public class OPG {
         char op;
         int mode;
         stack.push(chs[0]);//之后对入栈值进行优化
-        System.out.println(chs);
         if(chs[0]==')'){
             System.out.println("E");
             return 0;
@@ -148,8 +147,11 @@ public class OPG {
             if(ch == '\r'||ch == '\n'||ch=='\0'){
                 break;
             }
+            if(!isOPs(ch)){
+                System.out.println("E");
+                return 0;
+            }
             while (true){
-
                 op=FindOP();
                 if(op==0)
                     break;
