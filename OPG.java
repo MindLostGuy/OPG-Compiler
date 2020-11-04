@@ -177,7 +177,7 @@ public class OPG {
         while (stack.size()>1||stack.peek()!='N'){
             op=FindOP();
             if(op=='('){
-                System.out.println("E");
+                System.out.println("RE");
                 return 0;
             }
             mode=Raction();
